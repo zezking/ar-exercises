@@ -5,17 +5,13 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
+require_relative './exercise_7'
 
-puts "Exercise 7"
+puts "Exercise 8"
 puts "----------"
 
-# Your code goes here ..
-# puts "Enter a store name"
-# print ">" 
-# name=gets.chomp
+password_employee=@store2.employees.create(first_name: "Test", last_name: "password", hourly_rate: 40)
 
-# storeValidate=Store.create(name: "#{name}")
+password_employee.save
 
-# storeValidate.save
-
-# puts storeValidate.errors.full_messages
+p password_employee
